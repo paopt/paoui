@@ -13,9 +13,12 @@ import {
 import { PaoBadgeColor, PaoBadgePosition, PaoBadgeSize } from './type';
 
 @Component({
-	selector: '[pao-badge]',
+	selector: '[paoBadge]',
 	template: `
-
+		<span class="pao-badge">
+			<ng-content></ng-content>
+			<span class="pao-badge-content">0</span>
+		</span>
 	`,
 	styleUrls: ['./badge.component.less'],
 	changeDetection: ChangeDetectionStrategy.OnPush,
@@ -38,5 +41,7 @@ export class PaoBadgeComponent implements OnInit, OnChanges {
 
 	ngOnChanges(changes: SimpleChanges) {}
 
-	ngOnInit() { }
+	ngOnInit() {
+		console.log(123);
+	}
 }
