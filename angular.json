@@ -9,7 +9,7 @@
     "pui": {
       "projectType": "library",
       "root": "components",
-      "sourceRoot": "components/src",
+      "sourceRoot": "components",
       "prefix": "pao",
       "architect": {
         "build": {
@@ -49,7 +49,7 @@
       },
       "root": "examples",
       "sourceRoot": "examples/src",
-      "prefix": "demo-",
+      "prefix": "demo",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",

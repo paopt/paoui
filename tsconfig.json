@@ -15,11 +15,8 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "pui": [
-        "dist/pui/pui",
-        "dist/pui",
-        "dist/pui/pui",
-        "dist/pui"
+      "pui/*": [
+        "components/*",
       ]
     },
     "target": "es2017",
