@@ -1,0 +1,116 @@
+@pao-badge-small-height: 16px;
+@pao-badge-medium-height: 22px;
+@pao-badge-large-height: 28px;
+
+@pao-badge-small-fontsize: 12px;
+@pao-badge-medium-fontsize: 14px;
+@pao-badge-large-fontsize: 20px;
+
+@pao-badge-primary: #3f51b5;
+@pao-badge-accent: #ff4081;
+@pao-badge-warn: red;
+
+.pao-badge {
+  position: relative;
+}
+
+.pao-badge-content {
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  pointer-events: none;
+}
+
+.pao-badge-small .pao-badge-content{
+  width: @pao-badge-small-height;
+  height: @pao-badge-small-height;
+  line-height: @pao-badge-small-height;
+  font-size: @pao-badge-small-fontsize;
+}
+
+.pao-badge-medium .pao-badge-content{
+  width: @pao-badge-medium-height;
+  height: @pao-badge-medium-height;
+  line-height: @pao-badge-medium-height;
+  font-size: @pao-badge-medium-fontsize;
+}
+
+.pao-badge-large .pao-badge-content{
+  width: @pao-badge-large-height;
+  height: @pao-badge-large-height;
+  line-height: @pao-badge-large-height;
+  font-size: @pao-badge-large-fontsize;
+}
+
+.pao-badge-primary .pao-badge-content{
+  background-color: @pao-badge-primary;
+}
+
+.pao-badge-accent .pao-badge-content{
+  background-color: @pao-badge-accent;
+}
+
+.pao-badge-warn .pao-badge-content{
+  background-color: @pao-badge-warn;
+}
+
+.pao-badge-before .pao-badge-content{
+  right: 100%;
+}
+
+.pao-badge-after .pao-badge-content{
+  left: 100%;
+}
+
+.pao-badge-small.pao-badge-above .pao-badge-content{
+  top: calc(-@pao-badge-small-height / 2);
+}
+
+.pao-badge-small.pao-badge-below .pao-badge-content{
+  bottom: calc(-@pao-badge-small-height / 2);
+}
+
+.pao-badge-small.pao-badge-overlap.pao-badge-before .pao-badge-content{
+  left: calc(-@pao-badge-small-height / 2);
+}
+
+.pao-badge-small.pao-badge-overlap.pao-badge-after .pao-badge-content{
+  right: calc(-@pao-badge-small-height / 2);
+}
+
+.pao-badge-medium.pao-badge-above .pao-badge-content{
+  top: calc(-@pao-badge-medium-height / 2);
+}
+
+.pao-badge-medium.pao-badge-below .pao-badge-content{
+  bottom: calc(-@pao-badge-medium-height / 2);
+}
+
+.pao-badge-medium.pao-badge-overlap.pao-badge-before .pao-badge-content{
+  left: calc(-@pao-badge-medium-height / 2);
+}
+
+.pao-badge-medium.pao-badge-overlap.pao-badge-after .pao-badge-content{
+  right: calc(-@pao-badge-medium-height / 2);
+}
+
+.pao-badge-large.pao-badge-above .pao-badge-content{
+  top: calc(-@pao-badge-large-height / 2);
+}
+
+.pao-badge-large.pao-badge-below .pao-badge-content{
+  bottom: calc(-@pao-badge-large-height / 2);
+}
+
+.pao-badge-large.pao-badge-overlap.pao-badge-before .pao-badge-content{
+  left: calc(-@pao-badge-large-height / 2);
+}
+
+.pao-badge-large.pao-badge-overlap.pao-badge-after .pao-badge-content{
+  right: calc(-@pao-badge-large-height / 2);
+}
