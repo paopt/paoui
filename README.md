@@ -1,1 +1,1 @@
-angular ui组件库，参考官方组件库material实现。
+angular ui组件库，功能参考官方组件库material实现。
