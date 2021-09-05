@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { PaoBadgeModule } from 'pui/badge';
+import { PaoButtonModule } from 'pui/button';
 
 import { AppComponent } from './app.component';
 
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    PaoBadgeModule
+    PaoBadgeModule,
+    PaoButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

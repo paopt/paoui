@@ -1,21 +1,43 @@
-<div style="margin-left: 200px;margin-top: 200px">
-  <span [paoBadge]="1" paoBadgeSize="large" paoBadgeColor="accent">hello world</span>
+<div style="margin-top: 100px;">
+  <button pao-button [disabled]="false" color="warn">Warn</button>
+  <button pao-button [disabled]="false" color="primary">Primary</button>
+  <button pao-button [disabled]="false" color="accent">accent</button>
+  <button pao-button [disabled]="false" >Basic</button>
+  <button pao-button [disabled]="true" >disabled</button>
 </div>
 
-<div style="margin-left: 200px;margin-top: 100px">
-  <span [paoBadge]="1" paoBadgeSize="medium" paoBadgeColor="accent" paoBadgePosition="above before">hello world</span>
+<div style="margin-top: 100px;">
+  <button pao-raised-button [disabled]="false" color="warn">warn</button>
+  <button pao-raised-button [disabled]="false" color="primary">primary</button>
+  <button pao-raised-button [disabled]="false" color="accent">accent</button>
+  <button pao-raised-button [disabled]="false" >basic</button>
+  <button pao-raised-button [disabled]="true" >disabled</button>
 </div>
 
-<div style="margin-left: 200px;margin-top: 100px">
-  <span 
-    [paoBadge]="1"
-    paoBadgeSize="medium"
-    paoBadgeColor="accent"
-    [paoBadgeOverlap]="true"
-    paoBadgePosition="above before">hello world</span>
+<div style="margin-top: 100px;">
+  <button pao-stroked-button [disabled]="false" color="warn">warn</button>
+  <button pao-stroked-button [disabled]="false" color="primary">primary</button>
+  <button pao-stroked-button [disabled]="false" color="accent">accent</button>
+  <button pao-stroked-button [disabled]="false" >Basic</button>
 </div>
 
-<div style="margin-left: 200px;margin-top: 100px">
-  <span [paoBadge]="1" paoBadgeSize="small" paoBadgeColor="accent">hello world</span>
+<div style="margin-top: 100px;">
+  <button pao-flat-button [disabled]="false" color="warn">warn</button>
+  <button pao-flat-button [disabled]="false" color="primary">primary</button>
+  <button pao-flat-button [disabled]="false" color="accent">accent</button>
+  <button pao-flat-button [disabled]="false" >Basic</button>
 </div>
 
+<div style="margin-top: 100px;">
+  <button pao-fab [disabled]="false" color="warn">warn</button>
+  <button pao-fab [disabled]="false" color="primary">primary</button>
+  <button pao-fab [disabled]="false" color="accent">accent</button>
+  <button pao-fab [disabled]="false" >Basic</button>
+</div>
+
+<div style="margin-top: 100px;">
+  <button pao-mini-fab [disabled]="false" color="warn">icon</button>
+  <button pao-mini-fab [disabled]="false" color="primary">icon</button>
+  <button pao-mini-fab [disabled]="false" color="accent">icon</button>
+  <button pao-mini-fab [disabled]="false" >icon</button>
+</div>

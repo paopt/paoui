@@ -1,0 +1,1 @@
+export type PaoButtonColor = 'primary' | 'accent' | 'warn';

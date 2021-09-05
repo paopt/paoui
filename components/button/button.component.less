@@ -1,0 +1,106 @@
+@pao-button-color-primary: #3f51b5;
+@pao-button-color-accent: #ff4081;
+@pao-button-color-warn: #f44336;
+
+@pao-button-height: 36px;
+@pao-button-padding: 16px;
+@pao-button-min-width: 64px;
+
+@pao-button-font-size: 14px;
+@pao-button-border-radius: 4px;
+
+.pao-button {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  height: @pao-button-height;
+  min-width: @pao-button-min-width;
+  padding: 0 @pao-button-padding;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: visible;
+  font-size: @pao-button-font-size;
+  text-align: center;
+  vertical-align: baseline;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: @pao-button-border-radius;
+}
+
+.pao-button:not([disabled]),
+.pao-button[pao-stroked-button]:not([disabled]) {
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+  &.pao-button-primary {
+    color: @pao-button-color-primary;
+    &:hover {
+      background-color: rgba(25, 64, 129, 0.12);
+    }
+  }
+  &.pao-button-accent {
+    color: @pao-button-color-accent;
+    &:hover {
+      background-color: rgba(63, 81, 181, 0.12);
+    }
+  }
+  &.pao-button-warn {
+    color: @pao-button-color-warn;
+    &:hover {
+      background-color: rgba(244, 67, 54, 0.12);
+    }
+  }
+}
+
+.pao-button[pao-raised-button]:not([disabled]),
+.pao-button[pao-flat-button]:not([disabled]),
+.pao-button[pao-fab]:not([disabled]),
+.pao-button[pao-mini-fab]:not([disabled]) {
+  &.pao-button-primary {
+    color: #fff;
+    background-color: @pao-button-color-primary;
+  }
+  &.pao-button-accent {
+    color: #fff;
+    background-color: @pao-button-color-accent;
+  }
+  &.pao-button-warn {
+    color: #fff;
+    background-color: @pao-button-color-warn;
+  }
+}
+
+.pao-button-shadow {
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
+.pao-button[pao-raised-button]:not([disabled]) {
+  .pao-button-shadow;
+}
+
+.pao-button[pao-stroked-button]:not([disabled]) {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.pao-button[pao-fab] {
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  min-width: 0;
+  border-radius: 50%;
+}
+
+.pao-button[pao-mini-fab] {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  min-width: 0;
+  border-radius: 50%;
+}
+
+.pao-button[disabled] {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(0, 0, 0, 0.12);
+}
