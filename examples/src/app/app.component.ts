@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pui-example';
+  value = '123';
+  disabled = false;
+
+  change() {
+    this.disabled = !this.disabled;
+  }
 }
