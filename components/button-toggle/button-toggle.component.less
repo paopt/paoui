@@ -1,0 +1,42 @@
+.pao-button-toggle-group {
+  display: inline-flex;
+  flex-direction: row;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.pao-button-toggle:not([disabled]) {
+  color: rgba(0,0,0,.87);
+  background-color: #fff;
+  &.pao-button-toggle-checked {
+    background-color: #e0e0e0;
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+}
+
+.pao-button-toggle[disabled] {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.pao-button-toggle + .pao-button-toggle {
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.pao-button-toggle-button {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.pao-button-toggle-content {
+  display: inline-block;
+  padding: 0 12px;
+  line-height: 48px;
+}
