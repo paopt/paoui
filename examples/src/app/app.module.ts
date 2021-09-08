@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { PaoBadgeModule } from 'pui/badge';
 import { PaoButtonModule } from 'pui/button';
 import { PaoButtonToggleModule } from 'pui/button-toggle';
-import { FormsModule } from '_@angular_forms@12.2.1@@angular/forms';
-
+import { PaoCardModule } from 'pui/card';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -14,10 +14,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     PaoBadgeModule,
     PaoButtonModule,
     PaoButtonToggleModule,
-    FormsModule
+    PaoCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
