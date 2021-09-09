@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '_@angular_common@12.2.1@@angular/common';
+import { CommonModule } from '@angular/common';
 
 import { PaoBadgeComponent } from './badge.component';
 

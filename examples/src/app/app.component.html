@@ -1,19 +1,7 @@
-<pao-card class="example-card" style="width: 500px;">
-  <pao-card-header>
-    <div pao-card-avatar class="example-header-image"></div>
-    <pao-card-title>Shiba Inu</pao-card-title>
-    <pao-card-subtitle>Dog Breed</pao-card-subtitle>
-  </pao-card-header>
-  <img pao-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-  <pao-card-content>
-    <p>
-      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-      bred for hunting.
-    </p>
-  </pao-card-content>
-  <pao-card-actions>
-    <button pao-flat-button color="primary">LIKE</button>
-    <button pao-flat-button color="accent">SHARE</button>
-  </pao-card-actions>
-</pao-card>
+
+  <input type="text" placeholder="Search for a street" [formControl]="control" [paoAutocomplete]="auto">
+  <pao-autocomplete #auto="paoAutoComplete">
+    <pao-option *ngFor="let street of filteredStreets | async" [value]="street">
+      {{street}}
+    </pao-option>
+  </pao-autocomplete>
