@@ -21,11 +21,17 @@ export class PaoAutocompleteTriggerDirective implements OnInit {
     }
   }
 
-  @HostListener('click')
-  handleClick() {
+  @HostListener('click', ['$event'])
+  handleClick(event: MouseEvent) {
+    event.stopPropagation();
     if (!this.paoAutocomplete.isOpen) {
       this.openPanel();
     }
+  }
+
+  @HostListener('document:click', ['$event'])
+  handleBodyClick(event: MouseEvent) {
+    this.closePanel();
   }
 
   openPanel() {
@@ -50,14 +56,18 @@ export class PaoAutocompleteTriggerDirective implements OnInit {
     this.paoAutocomplete.opened.next();
     const width = this.eleRef.nativeElement.offsetWidth + 'px';
     this.paoAutocomplete.setWidth(width);
-    this.overlayRef.outsidePointerEvents().subscribe(_ => {
-      this.closePanel();
-    });
   }
 
   closePanel() {
     this.overlayRef.detach();
     this.paoAutocomplete.isOpen = false;
     this.paoAutocomplete.closed.next();
+  }
+
+  /**
+   * 计算位置
+   */
+  computePosition() {
+
   }
 }

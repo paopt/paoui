@@ -13,7 +13,8 @@ import {
   QueryList,
   ViewChild,
   SimpleChanges,
-  OnChanges
+  OnChanges,
+  HostListener
 } from '@angular/core';
 
 import { PaoOptionComponent } from './option.component';
@@ -71,6 +72,7 @@ export class PaoAutocompleteComponent implements OnChanges {
   }
 
   handleClick(event: MouseEvent) {
+    event.stopPropagation();
     const target = event.target as HTMLElement;
     if (this.groups?.length) {
       for (const group of this.groups) {

@@ -1,7 +1,8 @@
-
+<div style="margin-top: 400px;">
   <input type="text" placeholder="Search for a street" [formControl]="control" [paoAutocomplete]="auto">
   <pao-autocomplete #auto="paoAutoComplete">
     <pao-option *ngFor="let street of filteredStreets | async" [value]="street">
       {{street}}
     </pao-option>
   </pao-autocomplete>
+</div>
