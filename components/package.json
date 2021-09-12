@@ -1,12 +1,12 @@
 {
-  "name": "pui",
-  "version": "0.0.1",
+  "name": "paoui",
+  "version": "2.0.0",
   "peerDependencies": {
     "@angular/common": "^12.2.0",
-    "@angular/core": "^12.2.0",
-    "@angular/cdk": "^12.2.5"
+    "@angular/core": "^12.2.0"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "@angular/cdk": "^12.2.5"
   }
 }

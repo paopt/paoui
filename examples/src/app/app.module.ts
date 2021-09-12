@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { PaoBadgeModule } from 'pui/badge';
-import { PaoButtonModule } from 'pui/button';
-import { PaoButtonToggleModule } from 'pui/button-toggle';
-import { PaoCardModule } from 'pui/card';
-import { PaoAutocompleteModule } from 'pui/autocomplete';
+import { PaoBadgeModule } from 'paoui/badge';
+import { PaoButtonModule } from 'paoui/button';
+import { PaoButtonToggleModule } from 'paoui/button-toggle';
+import { PaoCardModule } from 'paoui/card';
+import { PaoAutocompleteModule } from 'paoui/autocomplete';
 
 import { AppComponent } from './app.component';
 

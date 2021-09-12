@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "",
   "projects": {
-    "pui": {
+    "paoui": {
       "projectType": "library",
       "root": "components",
       "sourceRoot": "components",
