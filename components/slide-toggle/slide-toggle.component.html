@@ -1,0 +1,17 @@
+<label [attr.for]="inputId" class="pao-slide-toggle-container">
+  <span class="pao-slide-toggle-bar">
+    <input type="checkbox" class="cdk-visually-hidden" #input
+      [attr.id]="inputId"
+      [attr.name]="name"
+      [attr.tabIndex]="tabIndex"
+      [checked]="checked"
+      [disabled]="disabled"
+      (click)="handleClick($event)"
+      (change)="handleChange($event)"
+    >
+    <span class="pao-slide-toggle-thumb"></span>
+  </span>
+  <span class="pao-slide-toggle-label">
+    <ng-content></ng-content>
+  </span>
+</label>

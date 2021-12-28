@@ -1,0 +1,21 @@
+<label [attr.for]="inputId" class="pao-radio-container">
+  <span class="pao-radio-input-container">
+    <span class="pao-radio-outer">
+      <span class="pao-radio-inner"></span>
+    </span>
+    <input type="radio" class="cdk-visually-hidden"
+      [attr.id]="inputId"
+      [attr.name]="name"
+      [attr.value]="value"
+      [attr.tabIndex]="tabIndex"
+      [checked]="checked"
+      [disabled]="disabled"
+      (focus)="focus()"
+      (change)="handleChange($event)"
+      (click)="handleClick($event)"
+    >
+  </span>
+  <span class="pao-radio-label">
+    <ng-content></ng-content>
+  </span>
+</label>

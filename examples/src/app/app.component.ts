@@ -12,6 +12,7 @@ export class AppComponent {
   control = new FormControl();
   streets: string[] = ['Champs-Élysées', 'Lombard Street', 'Abbey Road', 'Fifth Avenue'];
   filteredStreets!: Observable<string[]>;
+  checked = true;
   
   ngOnInit() {
     this.filteredStreets = this.control.valueChanges.pipe(
@@ -25,5 +26,21 @@ export class AppComponent {
   }
   private _normalizeValue(value: string): string {
     return value.toLowerCase().replace(/\s/g, '');
+  }
+
+  setTrue() {
+    this.control.patchValue(true);
+  }
+
+  setFalse() {
+    this.control.setValue(false);
+  }
+
+  setDisabled() {
+    if (this.control.disabled) {
+      this.control.enable();
+    } else {
+      this.control.disable();
+    }
   }
 }

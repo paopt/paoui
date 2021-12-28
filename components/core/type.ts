@@ -1,0 +1,1 @@
+export type PaoColor = 'primary' | 'accent' | 'warn' | undefined;

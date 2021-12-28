@@ -1,0 +1,29 @@
+<label [attr.for]="inputId" class="pao-checkbox-container">
+  <span class="pao-checkbox-inner-container">
+    <input #input type="checkbox" class="pao-checkbox-input cdk-visually-hidden"
+      [id]="inputId"
+      [attr.name]="name"
+      [attr.value]="value"
+      [attr.tabIndex]="tabIndex"
+      [checked]="checked"
+      [disabled]="disabled"
+      (change)="handleChange($event)"
+      (click)="handleClick($event)">
+    <span class="pao-checkbox-background">
+      <svg version="1.1"
+           focusable="false"
+           class="pao-checkbox-checkmark"
+           viewBox="0 0 24 24"
+           xml:space="preserve">
+        <path class="pao-checkbox-checkmark-path"
+              fill="none"
+              stroke="white"
+              d="M4.1,12.7 9,17.6 20.3,6.3"/>
+      </svg>
+      <span class="pao-checkbox-mixedmark"></span>
+    </span>
+  </span>
+  <span class="pao-checkbox-label">
+    <ng-content></ng-content>
+  </span>
+</label>

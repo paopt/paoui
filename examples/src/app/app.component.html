@@ -1,8 +1,28 @@
-<div style="margin-top: 400px;">
+<!-- <div style="margin-top: 400px;">
   <input type="text" placeholder="Search for a street" [formControl]="control" [paoAutocomplete]="auto">
   <pao-autocomplete #auto="paoAutoComplete">
     <pao-option *ngFor="let street of filteredStreets | async" [value]="street">
       {{street}}
     </pao-option>
   </pao-autocomplete>
+</div> -->
+
+<!-- <pao-checkbox [formControl]="control" [indeterminate]="false">香蕉</pao-checkbox>
+{{control.value}}
+
+<button (click)="setTrue()">true</button>
+<button (click)="setFalse()">false</button>
+<button (click)="setDisabled()">disabled</button> -->
+
+<!-- <pao-radio-group [value]="'ccc'">
+  <pao-radio-button [value]="'aaa'">123</pao-radio-button>
+  <pao-radio-button [value]="'bbb'">123</pao-radio-button>
+  <pao-radio-button [value]="'ccc'">123</pao-radio-button>
+</pao-radio-group> -->
+
+<!-- <pao-slide-toggle [checked]="true" [labelPosition]="'before'" [(ngModel)]="checked">slide toggle</pao-slide-toggle>{{checked}} -->
+
+
+<div style="margin-left: 200px;margin-top: 200px;">
+  <pao-slider vertical></pao-slider>
 </div>

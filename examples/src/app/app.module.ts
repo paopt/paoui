@@ -7,8 +7,12 @@ import { PaoButtonModule } from 'paoui/button';
 import { PaoButtonToggleModule } from 'paoui/button-toggle';
 import { PaoCardModule } from 'paoui/card';
 import { PaoAutocompleteModule } from 'paoui/autocomplete';
+import { PaoCheckboxModule } from 'paoui/checkbox';
+import { PaoRadioModule } from 'paoui/radio';
 
 import { AppComponent } from './app.component';
+import { PaoSlideToggleModule } from 'paoui/slide-toggle/slide-toggle.module';
+import { PaoSliderModule } from 'paoui/slider';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { AppComponent } from './app.component';
     PaoButtonModule,
     PaoButtonToggleModule,
     PaoCardModule,
-    PaoAutocompleteModule
+    PaoAutocompleteModule,
+    PaoCheckboxModule,
+    PaoRadioModule,
+    PaoSlideToggleModule,
+    PaoSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
