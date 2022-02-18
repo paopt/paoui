@@ -1,8 +1,10 @@
-<div class="pao-slider-container">
-  <div class="pao-slider-track" #track></div>
-  <div class="pao-slider-ticks"></div>
-  <div class="pao-slider-thumb" #thumb>
-    <div class="pao-slider-ball" #ball></div>
+<div class="pao-slider-container" #sliderWrapper>
+  <div class="pao-slider-track">
+    <div class="pao-slider-track-background" [ngStyle]="getTrackBackgroundStyle()"></div>
+    <div class="pao-slider-track-fill" [ngStyle]="getTrackFillStyle()"></div>
+  </div>
+  <div class="pao-slider-thumb" [ngStyle]="getThumbStyle()">
+    <div class="pao-slider-ball"></div>
     <div class="pao-slider-label"></div>
   </div>
 </div>

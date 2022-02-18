@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { PaoSliderComponent } from './slider.component';
 
 @NgModule({
-  imports: [],
+  imports: [CommonModule],
   exports: [PaoSliderComponent],
   declarations: [PaoSliderComponent],
   providers: [],
